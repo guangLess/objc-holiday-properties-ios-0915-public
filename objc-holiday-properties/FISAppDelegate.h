@@ -5,6 +5,7 @@
 @interface FISAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong , nonatomic) NSDictionary *database;
 
 /**
  
@@ -16,6 +17,9 @@
 
 - (NSArray *)suppliesInHoliday:(NSString *)holiday
                       inSeason:(NSString *)season;
+
+
+
 
 - (BOOL)holiday:(NSString* )holiday
      isInSeason:(NSString *)season;
